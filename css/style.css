@@ -4,3 +4,7 @@
   .faq-content{
     min-height: 500px;
   }
+
+h2 {
+   margin: auto;
+}
