@@ -1,65 +1,194 @@
 <!DOCTYPE html>
-<html>
+<!-- Head tags to include FontAwesome -->
 <head>
-  <meta charset="UTF-8">
-  <title>Story Form Carousel</title>
-  <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-
-  
-  <link rel='stylesheet prefetch' href='http://cdn.foundation5.zurb.com/foundation.css'>
-<link rel='stylesheet prefetch' href='http://cdn.jsdelivr.net/jquery.slick/1.3.7/slick.css'>
-      <link rel="stylesheet" href="css/style.css">
-<script src="http://code.jquery.com/jquery-latest.min.js"
-        type="text/javascript"></script>
-  
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="carousel.css">
+  <script src="file.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:bold' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
 </head>
-
 <body>
-                    <h2>Which Story Form Should I Use?</h2>
-  <div class="row text-center slick-multislider">
-        <div class="large-4 small-12 columns">
-          <img src="https://s28.postimg.org/eh4bnulpp/Screen_Shot_2017_01_13_at_2_50_01_PM.png" alt="">
-          <h4 class="h5-title-margin-top">LISTY</h4>
-          <div class="title-blue-line-content"></div>
-          <p>Chunky sections | Contextual art | Subheads</p>
-        </div>
-        <div class="large-4 small-12 columns">
-          <img src="https://s28.postimg.org/5m6zuxyel/Screen_Shot_2017_01_13_at_2_57_12_PM.png" alt="">
-          <h4 class="h5-title-margin-top">PHOTO ESSAY</h4>
-          <div class="title-blue-line-content"></div>
-          <p>Image-based narrative | Explainer text | Powerful lead image</p>
-        </div>
-        <div class="large-4 small-12 columns">
-          <img src="https://s23.postimg.org/ipqsb6azv/Screen_Shot_2017_01_13_at_2_52_47_PM.png" alt="">
-          <h4 class="h5-title-margin-top">LIVE BRIEFING</h4>
-          <div class="title-blue-line-content"></div>
-          <p>Article with legs | News-driven | Regular developments</p>
-        </div>
-        <div class="large-4 columns">
-          <img src="https://s23.postimg.org/5lj8u7dy3/Screen_Shot_2017_01_13_at_2_53_31_PM.png" alt="">
-          <h4 class="h5-title-margin-top">FULL-BLEED</h4>
-          <div class="title-blue-line-content"></div>
-          <p>Exceptional article | Stunning lead image captures theme</p>
-        </div>
-        <div class="large-4 columns">
-          <img src="https://s28.postimg.org/c7j2vtiql/Screen_Shot_2017_01_13_at_2_54_34_PM.png" alt="">
-          <h4 class="h5-title-margin-top">CHATBLOG</h4>
-          <div class="title-blue-line-content"></div>
-          <p>Fastest pace | Intimate connection | Casual tone</p>
-        </div>
-        <div class="large-4 columns">
-          <img src="https://s24.postimg.org/t7rmohp1x/Screen_Shot_2017_01_13_at_3_08_28_PM.png" alt="">
-          <h4 class="h5-title-margin-top">ADVENTURE</h4>
-          <div class="title-blue-line-content"></div>
-          <p>Interactive possibilities | Quizzes | Forking logic paths</p>
-        </div>
-      </div>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='http://cdn.foundation5.zurb.com/foundation.js'></script>
-<script src='http://cdn.jsdelivr.net/jquery.slick/1.3.7/slick.min.js'></script>
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand navbar-center" href="#">Tools and Story Forms</a>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class='row'>
+    <div class='col-md-12'>
+      <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+        <!-- Bottom Carousel Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#quote-carousel" data-slide-to="1"></li>
+          <li data-target="#quote-carousel" data-slide-to="2"></li>
+          <li data-target="#quote-carousel" data-slide-to="3"></li>
+          <li data-target="#quote-carousel" data-slide-to="4"></li>
+          <li data-target="#quote-carousel" data-slide-to="5"></li>
+          <li data-target="#quote-carousel" data-slide-to="6"></li>
+          <li data-target="#quote-carousel" data-slide-to="7"></li>
+        </ol>
+        
+        <!-- Carousel Slides / Quotes -->
+        <div class="carousel-inner">
+        
+            <!-- item -->
+          <div class="item active">
+            <blockquote>
+                <div class="row">
+                <div class="col-sm-6 text-center">
+                  <img src="https://s28.postimg.org/o27d6v9ml/Oak.jpg" width="500px">
+                </div>
+                  <div class="col-sm-6 text-left">
+                    <h3 class="text-center">Oak</h3>
+                    <p class="lead">A reimagined story creation tool, Oak is easy and intuitive to use, fully integrated with a variety of media, and built to support an expressive range of storytelling.</p>
+                  <p><b>When to use it:</b> Use Oak when you have a variety of contextual media, complex typography needs, and a narrative that lends itself to an interplay between text and media.</p>
+                  <p><b>How to get started:</b> At this stage in the rollout, we're asking users to use Oak only for articles that would otherwise be Listys. Have a look at our Oak training and support <a href = "http://cms-sandbox01.dev.iad2.nyt.net:5020/oak">website</a> for information on how to get started.</p>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          
+          <!-- item -->
+          <div class="item">
+            <blockquote>
+                <div class="row">
+                <div class="col-sm-6 text-center">
+                  <img src="https://s28.postimg.org/bs2kczskt/Chatblog.jpg" width="500px">
+                </div>
+                  <div class="col-sm-6 text-left">
+                    <h3 class="text-center">Chatblog</h3>
+                    <p class="lead">An Interactive News tool that enables us to build intimate connections with readers by publishing live chats, with or without reader comments.</p>
+                  <p><b>When to use it:</b> Use Chatblog for live news events that will unfold on a moment-by-moment basis—for example, major sporting events—or for planned question-and-answer sessions, with or without reader-submitted comments.</p>
+                  <p><b>How to get started:</b> Have a look at our Chatblog training and support <a href = "http://cms-sandbox01.dev.iad2.nyt.net:5020/chatblog">website</a> for information on how to get started.</p>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          
+          <!-- item -->
+          <div class="item">
+            <blockquote>
+                <div class="row">
+                <div class="col-sm-6 text-center">
+                  <img src="https://s27.postimg.org/fse7rs943/Live_Briefing.jpg" width="500px">
+                </div>
+                  <div class="col-sm-6 text-left">
+                    <h3 class="text-center">Live Briefing</h3>
+                    <p class="lead">Faster than a leadall, Live Briefings add style and structure to standard Scoop articles to provide readers with comprehensive digests of important news events.</p>
+                  <p><b>When to use it:</b> Use Live Briefings to provide perspective on major news events that have a large scope, multiple storylines, and regular updates. Faster than a standard Scoop article, slower than Chatblog.</p>
+                  <p><b>How to get started:</b> Have a look at our Live Briefing training and support <a href = "http://cms-sandbox01.dev.iad2.nyt.net:5020/live-briefing">website</a> for information on how to get started.</p>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          
+          <!-- item -->
+          <div class="item">
+            <blockquote>
+                <div class="row">
+                <div class="col-sm-6 text-center">
+                  <img src="https://s27.postimg.org/y43uv2klf/Photo_Essay.jpg" width="500px">
+                </div>
+                  <div class="col-sm-6 text-left">
+                    <h3 class="text-center">Photo Essay</h3>
+                    <p class="lead">This form showcases our photo desk's exceptional work, intermingling images and explainer text to provide a visually-driven narrative with a strong emotional impact.</p>
+                  <p><b>When to use it:</b> Use photo essays to showcase our finest collections of visual media, with explainer text taking a backseat to a vivid narrative constructed mostly by our photo staff. Extra credit for an especially stunning lead photograph.</p>
+                  <p><b>How to get started:</b> For guidance on using photo essays, contact the News Design team at <a href="https://nytnews.slack.com/messages/news-design/">#news-design</a></p>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          
+          <!-- item -->
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-6 text-center">
+                  <img src="https://s30.postimg.org/dm1hr64wx/Full_Bleed.jpg" width="500px">
+                </div>
+                  <div class="col-sm-6 text-left">
+                    <h3 class="text-center">Full-Bleed Header</h3>
+                    <p class="lead">Articles with full-bleed headers place an iconic, gripping image at the top to set a mood, and use those alluring visuals to draw extra reader attention to exceptional work.</p>
+                  <p><b>When to use it:</b> Full-bleed headers provide emphasis on the visual aspects of an article. Save full-bleed headers for articles with exceptional reporting, photography, or visuals that deserve extra attention from our readers.</p>
+                  <p><b>How to get started:</b> For guidance on using full-bleed headers, contact the News Design team at <a href="https://nytnews.slack.com/messages/news-design/">#news-design</a></p>
+                </div>
+              </div>
+            </blockquote>
+          </div>
 
-    <script src="js/index.js"></script>
+           <!-- item -->
+          <div class="item">
+            <blockquote>
+                <div class="row">
+                <div class="col-sm-6 text-center">
+                  <img src="https://s27.postimg.org/cejne4zbn/Preview_Maker.jpg" width="500px">
+                </div>
+                  <div class="col-sm-6 text-left">
+                    <h3 class="text-center">Preview Maker</h3>
+                    <p class="lead">Preview Maker uses Google Documents—and the guidance of a news graphics editor—to power sophisticated interactive journalism with custom designs.</p>
+                  <p><b>When to use it:</b> Preview Maker requires dedicated assistance from our News Graphics and News Design teams—it should only be used for notable articles that deserve extra attention from our readers.</p>
+                  <p><b>How to get started:</b> For guidance on using Preview Maker, contact the News Graphics team at <a href="https://nytnews.slack.com/messages/graphics/">#graphics</a></p>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+         
+          <!-- item -->
+          <div class="item">
+            <blockquote>
+                <div class="row">
+                <div class="col-sm-6 text-center">
+                  <img src="https://s27.postimg.org/o7wo3l8j7/Documents.jpg" width="500px">
+                </div>
+                  <div class="col-sm-6 text-left">
+                    <h3 class="text-center">Documents</h3>
+                    <p class="lead">Document Cloud enables you to publish public documents with your articles—and it holds powerful reporting tools that can index hundreds of pages of information in seconds.</p>
+                  <p><b>When to use it:</b> Use Document Cloud in conjunction with Scoop Documents to publish any public document that relates directly to your reporting. Document Cloud also offers powerful reporting tools that can make your life better.</p>
+                  <p><b>How to get started:</b> Have a look at our Documents training and support <a href = "http://cms-sandbox01.dev.iad2.nyt.net:5020/documents">website</a> for information on how to get started.</p>
+                </div>
+              </div>
+            </blockquote>
+          </div>
 
+        
+          <!-- item -->
+          <div class="item">
+            <blockquote>
+                <div class="row">
+                <div class="col-sm-6 text-center">
+                  <img src="https://s29.postimg.org/a9m3pyovr/What_We_Know.jpg" width="500px">
+                </div>
+                  <div class="col-sm-6 text-left">
+                    <h3 class="text-center">'What We Know'</h3>
+                    <p class="lead">A standard Scoop article structured to provide readers with a summary of what's known and not known about a single news topic.</p>
+                  <p><b>When to use it:</b> Use 'What We Know and Don't Know' when we see an opportunity to provide our readers with a summary of what's known to be true—and what's not yet verified—about any subject of great reader interest, whether breaking news or a slowly-developing topic.</p>
+                  <p><b>How to get started:</b> It's best to balance your planned 'What We Know' against competing coverage with the News Desk and <a href="https://nytnews.slack.com/messages/top-stories">#top-stories</a> in Slack</p>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+
+                        
+
+ 
+        </div>
+        
+        <!-- Carousel Buttons Next/Prev -->
+        <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+        <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+      </div>                          
+    </div>
+  </div>
+</div>
 </body>
-</html>
