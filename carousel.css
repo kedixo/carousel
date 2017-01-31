@@ -5,6 +5,11 @@
   margin-top: 5px;
 }
 
+h6 {
+	font-weight: 200;
+	margin-top: 10px;
+}
+
 body {
 	-webkit-font-smoothing: antialiased;
 }
